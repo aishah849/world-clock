@@ -26,6 +26,34 @@ function updateTime() {
       "h:mm:ss [<small>]A[<small/]"
     );
   }
+
+  //Vancouver
+  let vancouverElement = document.querySelector("#vancouver");
+  if (vancouverElement) {
+    let vancouverDateElement = vancouverElement.querySelector(".date");
+    let vancouverTimeElement = vancouverElement.querySelector(".time");
+    let vancouverTime = moment().tz("America/Vancouver");
+
+    vancouverDateElement.innerHTML = vancouverTime.format("D MMMM YYYY");
+    //vancouverTimeElement.innerHTML = `${vancouverTime.format("h:mm:ss")} <small>${vancouverTime.format("A")}</small>`;
+    vancouverTimeElement.innerHTML = vancouverTime.format(
+      "h:mm:ss [<small>]A[<small/]"
+    );
+  }
+
+  //beirut
+  let beirutElement = document.querySelector("#beirut");
+  if (beirutElement) {
+    let beirutDateElement = beirutElement.querySelector(".date");
+    let beirutTimeElement = beirutElement.querySelector(".time");
+    let beirutTime = moment().tz("Asia/beirut");
+
+    beirutDateElement.innerHTML = beirutTime.format("D MMMM YYYY");
+    //beirutTimeElement.innerHTML = `${beirutTime.format("h:mm:ss")} <small>${beirutTime.format("A")}</small>`;
+    beirutTimeElement.innerHTML = beirutTime.format(
+      "h:mm:ss [<small>]A[<small/]"
+    );
+  }
 }
 
 function updateCity(event) {
