@@ -12,26 +12,28 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="">Singapore</option>
-        <option value="">Colombo</option>
-        <option value="">Vancouver</option>
-        <option value="">Beirut</option>
+        <option value="Asia/Singapore">Singapore</option>
+        <option value="Asia/Colombo">Colombo</option>
+        <option value="America/Vancouver">Vancouver</option>
+        <option value="Asia/Beirut">Beirut</option>
       </select>
-      <div class="city" id="singapore">
-        <div>
-          <h2>Singapore 🇸🇬</h2>
-          <div class="date">30 December 2022</div>
+      <div id="cities">
+        <div class="city" id="singapore">
+          <div>
+            <h2>Singapore 🇸🇬</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">11:35:40 <small>PM</small></div>
-      </div>
-      <div class="city" id="colombo">
-        <div>
-          <h2>Colombo 🇱🇰</h2>
-          <div class="date">30 December 2022</div>
+        <div class="city" id="colombo">
+          <div>
+            <h2>Colombo 🇱🇰</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">11:35:40 <small>PM</small></div>
       </div>
     </div>
     <footer>
